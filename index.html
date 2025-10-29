@@ -1,34 +1,84 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Umbrella Checker</title>
+  <meta name="description" content="Assignment 2 — Weather Umbrella Checker">
+  <meta name="theme-color" content="#ffffff">
+
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+  <style>
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+    body {
+      background: #ffffff;
+      color: #111;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      margin: 32px;
+    }
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+    .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;                      /* stack on mobile */
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .rainbow-text {
+      background-image: linear-gradient(
+        90deg, red, orange, yellow, green, cyan, blue, violet
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+/* code stolen from https://www.w3schools.com/colors/colors_picker.asp */
+    h1 {
+      font-size: 2.4rem;
+      margin: 0 0 8px;
+      line-height: 1.1;
+    }
+
+    p {
+      margin: 8px 0;
+      font-size: 1.1rem;
+    }
+
+    .seal {
+      width: 480px;
+      max-width: 90vw;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      object-fit: cover;
+    }
+
+    .note {
+      font-size: 0.95rem;
+      color: #444;
+    }
+  </style>
 </head>
 
 <body>
+<div class="wrap">
+  <div class="copy">
+    <h1 class="rainbow-text">Umbrella Checker</h1>
+    <p>Open the console (F12) to see the weather result.</p>
+    <p class="note">Be careful. This code will change your life.</p>
+  </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js" defer></script>
+  <img
+    class="seal"
+    src="https://files.worldwildlife.org/wwfcmsprod/images/HERO_harbor_seal_on_ice/hero_small/41yzw17euy_Harbor_Seal_on_Ice_close_0357_6_11_07.jpg"
+    alt="A FUCKING SEAL BRO. 100% REAL NO SCAM FREE 4K 60FPS FREE DOWNLOAD LINK">
+</div>
 
-
+<script src="js/app.js" defer></script>
 </body>
-
 </html>
